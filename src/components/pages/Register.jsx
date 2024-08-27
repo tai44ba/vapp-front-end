@@ -9,7 +9,7 @@ const Register = () => {
     const submitHandler = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios({url:'http://localhost:5000/users/register', method:'POST',data:user})
+            const res = await axios({url:'https://vapp-back-end.onrender.com/users/register', method:'POST',data:user})
             console.log(res.data)
         } catch (error) {
             console.log(error)
